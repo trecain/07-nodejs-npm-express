@@ -9,6 +9,7 @@ app.get('/form', (req, res) => {
   res.sendFile('public/new.html', {root: __dirname});
 });
 
+// COMMENT: set it as static public because this allows user to access all of our files.
 app.use(express.static('public'));
 // REVIEW: POST route needs to parse the body passed in with the request.
 // POST middleware
